@@ -1,1 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Meghana Sunil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Layout & typography – similar feel to the reference */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 16px 64px;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #111;
+      background: #fff;
+    }
 
+    a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    h1, h2, h3, h4 {
+      font-weight: 600;
+      line-height: 1.3;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.25rem;
+    }
+
+    h2 {
+      margin-top: 2.5rem;
+      margin-bottom: 0.75rem;
+      font-size: 1.4rem;
+    }
+
+    h3 {
+      margin-top: 1.5rem;
+      margin-bottom: 0.25rem;
+      font-size: 1.1rem;
+    }
+
+    h4 {
+      margin: 0.5rem 0 0.25rem;
+      font-size: 1rem;
+    }
+
+    p {
+      margin: 0.25rem 0 0.5rem;
+    }
+
+    ul {
+      padding-left: 1.1rem;
+    }
+
+    li {
+      margin-bottom: 1rem;
+    }
+
+    .muted {
+      color: #555;
+    }
+
+    .site-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+      gap: 0.75rem;
+    }
+
+    .site-title a {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .site-nav a {
+      margin-left: 0.75rem;
+      font-size: 0.95rem;
+    }
+
+    .contact-links {
+      margin-top: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-links a {
+      margin-right: 0.5rem;
+    }
+
+    .section-note {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: -0.25rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .year {
+      white-space: nowrap;
+    }
+
+    .tag {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #555;
+    }
+
+    .footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / nav (similar to huiwenn.github.io) -->
+  <header class="site-header">
+    <div class="site-title">
+      <a href="/">Meghana Sunil</a>
+    </div>
+    <nav class="site-nav">
+      <a href="/">Home</a>
+      <a href="/blog.html">Blog</a>
+      <a href="/misc.html">Misc</a>
+    </nav>
+  </header>
+
+  <!-- Intro -->
+  <main>
+    <p>Hi! Meghana here.</p>
+
+    <p>
+      I'm a B.Tech Computer Science & Engineering (Data Science) student at Vellore Institute of Technology, Chennai (CGPA: 8.40/10). 
+      I’m broadly interested in machine learning, domain generalization, multimodal representation learning, and applied neuroinformatics.
+    </p>
+
+    <p>
+      Recently, I’ve been working on contrastive learning under domain shift, multimodal EEG–fNIRS stress analysis, 
+      retrieval-augmented generation (RAG) for personalized AI assistants, and medical imaging models for cancer and Parkinson’s disease.
+    </p>
+
+    <p class="contact-links">
+      <a href="/Meghana_Sunil_CV.pdf">CV</a> /
+      <a href="mailto:meghanaa.sunil@gmail.com">email</a> /
+      <a href="YOUR_LINKEDIN_URL">linkedin</a> /
+      <a href="YOUR_GITHUB_URL">github</a>
+    </p>
+
+    <!-- Works -->
+    <h2 id="works">Works</h2>
+    <p class="section-note">* denotes first-author work.</p>
+
+    <h3>Machine Learning & Domain Generalization</h3>
+    <ul>
+      <li>
+        <h4>* Contrastive Learning Under Domain Shift: Do Positive Pairs Help or Hurt Robustness?</h4>
+        <p>
+          <strong>Meghana Sunil</strong> · In progress · Advisor: Dr. Joe Dhanith
+        </p>
+        <p class="muted">
+          Studying how positive pairs in SimCLR, MoCo-v2, and BYOL affect robustness under domain shifts
+          on PACS, Office-Home, and Terra Incognita benchmarks, and designing improved positive/negative
+          formulations for cross-domain generalization.
+        </p>
+      </li>
+
+      <li>
+        <h4>* A Lightweight Continual Learning Approach via Retrieval-Augmented Generation for Personalized AI Assistants</h4>
+        <p>
+          <strong>Meghana Sunil</strong> · In progress · Advisor: Dr. Joe Dhanith
+        </p>
+        <p class="muted">
+          Continual learning framework that uses RAG and memory-augmented architectures to improve
+          long-term personalization in assistant responses, targeting low-resource deployment and reduced
+          retraining overhead.
+        </p>
+      </li>
+    </ul>
+
+    <h3>Medical AI & Neuroinformatics</h3>
+    <ul>
+      <li>
+        <h4>* Graph-Guided Cross-Modal Representation Learning of EEG–fNIRS via Spatio-Temporal Transformers for Stress Analysis</h4>
+        <p>
+          <strong>Meghana Sunil</strong> · Submitted to Computer Methods and Programs in Biomedicine ·
+          Advisor: Dr. Jeetashree Aparajeeta
+        </p>
+        <p class="muted">
+          CM-GGT: a cross-modal gated fusion framework with spectrogram-transformer EEG encoders and graph-based
+          fNIRS encoders, achieving 93.2% accuracy and 0.967 AUC on simultaneous EEG–fNIRS stress recordings
+          and outperforming 11 state-of-the-art baselines.
+        </p>
+      </li>
+
+      <li>
+        <h4>* Encouraging Discriminative Attention Through Contrastive Explainability Learning for Lung Cancer Diagnosis</h4>
+        <p>
+          <strong>Meghana Sunil</strong> · IEEE Access · Advisor: Dr. Nachiyappan S
+        </p>
+        <p class="muted">
+          Contrastive Explainability Learning (CEL) framework for lung cancer classification, enforcing Grad-CAM–
+          based contrastive constraints to encourage discriminative attention while maintaining &gt;98% accuracy
+          and F1-score on the IQ-OTH/NCCD dataset.
+        </p>
+        <p class="muted">
+          [Paper link] [Code link]
+        </p>
+      </li>
+
+      <li>
+        <h4>* Self-Attentive Quantile GAN with Causally Grounded Machine Learning for Vocal Biomarker Discovery in Parkinson’s Disease Detection</h4>
+        <p>
+          <strong>Meghana Sunil</strong> · IEEE Access · Advisor: Dr. Natarajan B
+        </p>
+        <p class="muted">
+          Combines causal inference with voice analysis using vocal frequency spread as a biomarker for Parkinson’s
+          disease, with DAG-based estimation of treatment effects and performance of 95.03% precision and
+          97.84% AUC-ROC.
+        </p>
+        <p class="muted">
+          [Paper link] [Code link]
+        </p>
+      </li>
+    </ul>
+
+    <h3>Surveys & Retrieval-Augmented Generation</h3>
+    <ul>
+      <li>
+        <h4>* Rethinking Knowledge Retrieval for Generation: A Survey on RAG Architectures and Applications</h4>
+        <p>
+          <strong>Meghana Sunil</strong> · Submitted to Artificial Intelligence Review · Advisor: Dr. Joe Dhanith
+        </p>
+        <p class="muted">
+          Survey of retrieval-augmented generation systems, proposing a four-tier taxonomy of RAG architectures
+          and curating key applications across healthcare, legal AI, finance, and other domains.
+        </p>
+      </li>
+    </ul>
+
+    <!-- Industry & applied work -->
+    <h2 id="experience">Industry & Applied Work</h2>
+
+    <h3>Center for Neuroinformatics — Machine Learning Research Intern</h3>
+    <p class="muted">
+      May 2025 – Jul 2025 · VIT Chennai
+    </p>
+    <p>
+      Built a multimodal stress prediction pipeline combining EEG spectrogram encoders with graph-based fNIRS
+      encoders, with temporal attention and spatial modeling for joint representation learning. Developed
+      interpretability modules (Grad-CAM, statistical analyses) to study channel-level relevance and task–brain
+      relationships.
+    </p>
+
+    <h3>Sponsored Research and Industrial Consultancy (SpoRIC), VIT Chennai</h3>
+    <p class="muted">
+      Jan 2025 – Present
+    </p>
+    <p>
+      <span class="tag">Software Development Engineer</span><br>
+      Designed a multi-branch school inventory platform for 4 branches, scaling to 1,000+ items per branch,
+      with low-stock alerts, barcode/QR-based tracking, and analytics dashboards for audits and budget planning.
+    </p>
+    <p>
+      <span class="tag">Computer Vision Engineer</span><br>
+      Prototyping a web-based multimodal diagnostic support tool that combines MRI images and metadata using
+      CNNs and RAG-based systems, with Streamlit interfaces and explainability modules.
+    </p>
+
+    <h3>MulticoreWare Inc — Machine Learning Intern, Frameworks &amp; Tools Unit</h3>
+    <p class="muted">
+      May 2025 – Jun 2025 · Chennai, India
+    </p>
+    <p>
+      Designed and optimized custom CNNs and ResNet-18 on TinyImageNet and CIFAR-10 (mean 88.64% accuracy),
+      and applied post-training quantization to shrink model size from 1668 KB (FP32) to 436 KB (INT8) with
+      negligible performance loss. Deployed models with ONNX Runtime and built an end-to-end fine-tuning
+      pipeline for quantized Transformers with LoRA/QLoRA and 13 CLI-configurable hyperparameters.
+    </p>
+
+    <!-- Education -->
+    <h2 id="education">Education</h2>
+    <h3>Vellore Institute of Technology, Chennai</h3>
+    <p class="muted">
+      B.Tech in Computer Science &amp; Engineering with Data Science ·
+      <span class="year">2023 – Present</span> · CGPA: 8.40/10
+    </p>
+
+    <!-- Key projects -->
+    <h2 id="projects">Key Projects</h2>
+
+    <ul>
+      <li>
+        <h4>ItinerEase: AI-Powered Itinerary Planner</h4>
+        <p class="muted">
+          Aug 2024 – Sep 2024 · Python, Gen AI, HTML/CSS, JavaScript, Django · Smart India Hackathon 2024
+        </p>
+        <p>
+          AI-based itinerary planner built with Django and vanilla JavaScript, targeting personalized trip plans.
+          Achieved high-quality recommendations and improved user satisfaction via optimized recommendation flows
+          and RAG-based enhancements for future personalization.
+        </p>
+      </li>
+
+      <li>
+        <h4>Snazzify: Smart E-Commerce with AI</h4>
+        <p class="muted">
+          Jan 2025 – Present · React, Node.js, MongoDB, HTML/CSS, OpenAI API · BCSE203E Course Project
+        </p>
+        <p>
+          Full-stack fashion e-commerce platform with AI-powered product recommendation chatbot, real-time user
+          support, and delivery tracking, integrating LLM pipelines for interactive shopping experiences.
+        </p>
+      </li>
+    </ul>
+
+    <!-- Skills -->
+    <h2 id="skills">Technical Skills</h2>
+    <p>
+      <strong>Languages:</strong> Python, Java, C, C++, JavaScript
+    </p>
+    <p>
+      <strong>Web &amp; Frameworks:</strong> React, HTML, CSS, Node.js
+    </p>
+    <p>
+      <strong>Clouds &amp; Databases:</strong> SQL
+    </p>
+    <p>
+      <strong>Developer Tools:</strong> VS Code, GitHub
+    </p>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>
+        Get in touch: <a href="mailto:meghanaa.sunil@gmail.com">email</a>,
+        <a href="https://github.com/meghanaasunil">github</a>,
+        <a href="https://www.linkedin.com/in/meghana-sunil/">linkedin</a>
+      </p>
+      <p>thanks for visiting!</p>
+    </div>
+  </main>
+
+</body>
+</html>
