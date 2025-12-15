@@ -1,10 +1,10 @@
-title: Sophia Sun
-name: "Sophia's Blog"
-author: Sophia Sun
-twitter_username: _yokaii_
+title: Meghana Sunil
+name: "Meghana's Portfolio"
+author: Meghana Sunil
+twitter_username: 
 baseurl: "/"
-description: bleep bloop tech blog.
-profile_url: "http://guiguiguiguigui.github.io"
+description: Machine Learning Research | Domain Generalization | Multimodal Learning
+profile_url: "https://github.com/meghanaasunil"
 permalink: /:title
 show_drafts: false
 future: false
