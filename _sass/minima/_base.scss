@@ -336,10 +336,13 @@ pre {
   }
 }
 
-// Ensure main page wrapper stays at original width
+// Wider wrapper for main/index page only
 .wrapper:not(.research-wrapper) {
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-  max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width: 1000px;
+  
+  @include media-query($on-laptop) {
+    max-width: 1000px;
+  }
 }
 
 
